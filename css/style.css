@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+:root{
+  --background: #212121;
+  --primary: rgb(28, 181, 224);
+  --secondary: rgb(0, 0, 70);
+  --text: #fff;
+  --league: 'League Spartan', sans-serif;
+  --poppins: 'Poppins', sans-serif;
+
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)),url('../assets/svg/Hexagon.svg');
+  background-position: center;
+  background-size: cover;
+}
+.landing{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 30px;
+  flex-wrap: wrap;
+ 
+}
+.profileImgSection{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.blob{
+
+  width: 700px;
+
+}
+.profileImg{
+  position: absolute;
+  width: 210px;
+  border-radius: 50%;
+  margin: 20px;
+ 
+}
+#typewriter{
+  font-family: var(--league);
+  font-weight: 800;
+  color: var(--primary);
+
+}
+
+
+.title{
+  font-family: var(--league);
+  font-size: 3rem;
+  color: var(--text);
+}
+.subtitle{
+  font-family: var(--league);
+  font-size: 2rem;
+  color: #404040;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 320px){
+  .profileImgSection{
+    width: 200px;
+    height: 200px;
+  }
+  .profileImg{
+    width: 150px;
+  }
+  .title, .subtitle{
+   text-align: center;
+  }
+  
+  .blob{
+    width: 300px;
+  }
+  .landing{
+    gap: 0px !important;
+  }
+}
